@@ -1,0 +1,23 @@
+#?????
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/tlias
+    username: root
+    password: 2005112
+  servlet:
+    multipart.max-file-size:  100MB
+    multipart.max-request-size: 200MB
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+
+aliossutils:
+  oss:
+     endpoint: https://oss-cn-shanghai.aliyuncs.com
+     accessKeyId: LTAI5tQjH9QFn3SF8pbk7ZMN
+     accessKeySecret: 5ihmO3gM1F4644EegOXMI5p04mBqzr
+     bucketName: web-tlias-bygyw
+
+
